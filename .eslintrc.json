@@ -1,0 +1,110 @@
+{
+  "extends": [
+    "airbnb-base",
+    "react-app",
+    "plugin:jest/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@babel/eslint-parser",
+  "plugins": [
+    "eslint-plugin-react",
+    "eslint-plugin-import",
+    "eslint-plugin-react-hooks",
+    "prettier",
+    "react"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "warn", {
+        "endOfLine": "auto"
+      }
+    ],
+    "arrow-parens": [
+      "off",
+      "as-needed"
+    ],
+    "import/no-extraneous-dependencies": [
+      "off"
+    ],
+    "import/extensions": [
+      "off"
+    ],
+    "class-methods-use-this": [
+      "off"
+    ],
+    "max-len": [
+      "error",
+      140,
+      2,
+      {
+        "ignoreUrls": true,
+        "ignoreComments": false
+      }
+    ],
+    "semi": [
+      "warn",
+      "never"
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "no-trailing-spaces": [
+      "warn",
+      {
+        "skipBlankLines": true
+      }
+    ],
+    "no-console": "warn",
+    "default-case": "off",
+    "camelcase": "off",
+    "function-paren-newline": "warn",
+    "import/no-unresolved": "off",
+    "no-shadow": "off",
+    "consistent-return": "off",
+    "no-unused-vars": "off",
+    "radix": "off",
+    "no-confusing-arrow": "off",
+    "object-curly-newline": "off",
+    "import/no-named-as-default": "off",
+    "no-param-reassign": [
+      "error",
+      {
+        "props": true,
+        "ignorePropertyModificationsFor": [
+          "draft"
+        ]
+      }
+    ],
+    "react/react-in-jsx-scope": "error",
+    "react/jsx-closing-bracket-location": "off",
+    "react/jsx-no-bind": "off",
+    "react/forbid-prop-types": "off",
+    "react/jsx-closing-tag-location": "off",
+    "react/jsx-curly-brace-presence": "off",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/prefer-stateless-function": "off",
+    "react/require-extension": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react/style-prop-object": "error",
+    "react/no-typos": "error",
+    "react/no-danger-with-children": "error",
+    "react/jsx-no-target-blank": "error",
+    "react/jsx-no-comment-textnodes": "error", 
+    "react/forbid-foreign-prop-types": "error",
+    "react/jsx-filename-extension": [
+      1,
+      {"extensions": [".js", ".jsx", ".ts", ".tsx"]}
+    ]
+  },
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module",
+    "experimentalObjectRestSpread": true
+  },
+  "env": {
+    "browser": true,
+    "jest": true
+  }
+}

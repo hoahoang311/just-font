@@ -1,8 +1,30 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap'); */
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url('/src/assets/Montserrat-SemiBold.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MontserratBold";
+  src: local("MontserratBold"),
+    url('/src/assets/Montserrat-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "MontserratXBold";
+  src: local("MontserratXBold"),
+    url('/src/assets/Montserrat-ExtraBold.ttf');
+  font-weight: bolder;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
